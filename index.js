@@ -200,6 +200,9 @@
 		  videoNode.playbackRate -= 0.1;
 		  $("#currentSpeed").html("Speed: "+parseFloat(videoNode.playbackRate).toFixed(1)+"x");
 	  }
+	  else if(e.key==" "){
+		videoNode.paused ? videoNode.play() : videoNode.pause();
+	  }
 		  
 	});
   var inputNode = document.querySelector('input');

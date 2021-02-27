@@ -103,12 +103,12 @@ input {
 }
 ::-webkit-scrollbar-thumb {
   background: #777777;
-  border: 1px none #000000;
+  border: 0px none #000000;
   border-radius: 50px;
 }
 ::-webkit-scrollbar-track {
   background: #d5d6e6;
-  border: 1px solid #000000;
+  border: 0px none #000000;
   border-radius: 53px;
 }
 ::-webkit-scrollbar-corner {

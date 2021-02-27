@@ -1,0 +1,27 @@
+<head>
+	<link rel="stylesheet" href="index.css">
+	<title> Zoom Local Recording Player </title>
+</head>
+<body>
+	<div id="message"></div>
+	<div id="mainView">
+		<video frameBorder="0" controls autoplay  controlsList="nofullscreen nodownload" disablePictureInPicture 
+		onclick="this.paused ? this.play() : this.pause();"></video>
+		<div id ="chatBox">
+			<div id="controls">
+				<p id="currentTime">Time: 00:00:00</p>
+				<p id="currentSpeed">Speed: 1x</p>
+				<button id="chatLineup">Resume Chat</button>
+			</div>
+			<div id="chat"></div>
+		</div>
+	</div>
+	<input type="file" webkitdirectory mozdirectory/>
+	<button id="upload">Upload Zoom Meeting Folder </button>
+	<p id="note">
+		Note: Due to the way zoom handles timestamps, calls that carry over to the next day will
+		have issues using the timestamp features.
+	</p>
+	<script src="jquery.js"></script>
+	<script src="index.js"></script>
+</body>

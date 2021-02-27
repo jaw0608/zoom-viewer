@@ -183,6 +183,7 @@
   $(window).resize(function(){
 	chatResize();
   });
+  document.querySelector('video').addEventListener('focus',function(){this.blur();},false);
   $(window).keydown(function(e) {
 	  var videoNode = document.querySelector('video')
 	  if(e.key=="ArrowRight"){
